@@ -14,9 +14,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        getData()
     }
 
+    func getData() {
+        BaseDataModel.action { responseData, error in
+            guard error == nil else { return }
+            guard let responseData = responseData else { return }
+            print(responseData)
+        }
+    }
 
 }
 

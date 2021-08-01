@@ -16,6 +16,10 @@
 		5A0373F526B3B76A00E01961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0373F326B3B76A00E01961 /* LaunchScreen.storyboard */; };
 		5A03740126B3BF3E00E01961 /* NSError+MessageError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A03740026B3BF3E00E01961 /* NSError+MessageError.m */; };
 		5A03740726B3C0B000E01961 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A03740626B3C0B000E01961 /* Utilities.m */; };
+		A20D931926B6B9B000EFE4D7 /* InnerDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A20D931826B6B9B000EFE4D7 /* InnerDataModel.m */; };
+		A20D931B26B6BAB100EFE4D7 /* InnerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20D931A26B6BAB100EFE4D7 /* InnerDataModel.swift */; };
+		A2B9E30626B672BB00AE92BA /* BaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B9E30526B672BB00AE92BA /* BaseDataModel.m */; };
+		A2B9E30B26B67C6F00AE92BA /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B9E30A26B67C6F00AE92BA /* APIClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,13 @@
 		5A03740226B3BF5A00E01961 /* NSError+MessageError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+MessageError.h"; sourceTree = "<group>"; };
 		5A03740526B3C07C00E01961 /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		5A03740626B3C0B000E01961 /* Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		A20D931726B6B95200EFE4D7 /* InnerDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InnerDataModel.h; sourceTree = "<group>"; };
+		A20D931826B6B9B000EFE4D7 /* InnerDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InnerDataModel.m; sourceTree = "<group>"; };
+		A20D931A26B6BAB100EFE4D7 /* InnerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerDataModel.swift; sourceTree = "<group>"; };
+		A2B9E30526B672BB00AE92BA /* BaseDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseDataModel.m; sourceTree = "<group>"; };
+		A2B9E30726B672CE00AE92BA /* BaseDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseDataModel.h; sourceTree = "<group>"; };
+		A2B9E30926B67BF500AE92BA /* APIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		A2B9E30A26B67C6F00AE92BA /* APIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
 		FD072094A1CB5B97EE220E29 /* Pods-ObjCSwiftCrossDataModelConversionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjCSwiftCrossDataModelConversionDemo.release.xcconfig"; path = "Target Support Files/Pods-ObjCSwiftCrossDataModelConversionDemo/Pods-ObjCSwiftCrossDataModelConversionDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +105,7 @@
 		5A0373FC26B3BED200E01961 /* ObjectiveCFiles */ = {
 			isa = PBXGroup;
 			children = (
+				A2B9E30826B67BCF00AE92BA /* APIClient */,
 				5A03740826B3C0FE00E01961 /* DataModel */,
 				5A03740426B3BFC100E01961 /* Utility */,
 				5A03740326B3BF8C00E01961 /* ErrorMessageHandling */,
@@ -123,8 +135,22 @@
 		5A03740826B3C0FE00E01961 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				A2B9E30526B672BB00AE92BA /* BaseDataModel.m */,
+				A2B9E30726B672CE00AE92BA /* BaseDataModel.h */,
+				A20D931726B6B95200EFE4D7 /* InnerDataModel.h */,
+				A20D931826B6B9B000EFE4D7 /* InnerDataModel.m */,
+				A20D931A26B6BAB100EFE4D7 /* InnerDataModel.swift */,
 			);
 			path = DataModel;
+			sourceTree = "<group>";
+		};
+		A2B9E30826B67BCF00AE92BA /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				A2B9E30926B67BF500AE92BA /* APIClient.h */,
+				A2B9E30A26B67C6F00AE92BA /* APIClient.m */,
+			);
+			path = APIClient;
 			sourceTree = "<group>";
 		};
 		BC5DABC5C2401B671E3712FC /* Frameworks */ = {
@@ -250,8 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B9E30626B672BB00AE92BA /* BaseDataModel.m in Sources */,
+				A2B9E30B26B67C6F00AE92BA /* APIClient.m in Sources */,
+				A20D931926B6B9B000EFE4D7 /* InnerDataModel.m in Sources */,
 				5A0373ED26B3B76800E01961 /* ViewController.swift in Sources */,
 				5A0373E926B3B76800E01961 /* AppDelegate.swift in Sources */,
+				A20D931B26B6BAB100EFE4D7 /* InnerDataModel.swift in Sources */,
 				5A03740126B3BF3E00E01961 /* NSError+MessageError.m in Sources */,
 				5A0373EB26B3B76800E01961 /* SceneDelegate.swift in Sources */,
 				5A03740726B3C0B000E01961 /* Utilities.m in Sources */,
